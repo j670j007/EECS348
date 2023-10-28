@@ -1,0 +1,23 @@
+body{
+	background-color: #FFF5E1;
+}
+
+h1{
+	font-size:36;
+	font-family: Courier New;
+}
+
+figcaption, .caption{
+	font-size: 14;
+
+}
+
+.practice1_style{
+	border: 2px solid black;
+	font-family: Courier New; 
+    	max-width: 600px; 
+    	margin: 10px; 
+	padding-left: 10px;
+	
+
+}

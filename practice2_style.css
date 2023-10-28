@@ -1,0 +1,8 @@
+
+.practice2_style {
+    border: 2px solid black;
+    font-family: Courier New; 
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px;
+}

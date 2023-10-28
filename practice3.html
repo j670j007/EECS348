@@ -1,0 +1,37 @@
+<HTML>
+<h1>Password Verification</h1>
+<title>Practice 3</title>
+
+
+
+<body>
+   <input type="text" id="password1" font-type:Courier New 10>Enter your password:</input><br>
+   <input type="text" id="password2">Enter your password again for verification:</input>
+   <button onclick="verifyPassword()">Submit</button>
+
+    <div id="message"></div>
+
+    <script>
+        function verifyPassword() {
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
+            var thismessage = document.getElementById("message");
+
+            if (password1 === password2) {
+                thismessage.textContent = "Password confirmed.";
+            } else {
+                thismessage.textContent = "Unable to verify password.";
+                document.getElementById("password1").value = "";
+                document.getElementById("password2").value = "";
+            }
+        }
+    </script>
+</body>
+
+
+
+
+
+
+
+</HTML>
