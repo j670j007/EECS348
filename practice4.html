@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<form method="post">
+    Enter an integer: <input type="text" name="num">
+    <input type="submit" value="multiplication table">
+</form>
+
+<?php
+
+$num = $_POST["num"];
+
+
+echo "<table border='1'>\n";
+for ($i = 1; $i <= $num; $i++) {
+	for ($j = 1; $j <= 10; $j++){
+	echo "\t<tr><td>$i * $j</td><td>" .($i * $j). "</td></tr>\n";
+	}
+	echo "</table>\n";
+}
+	
+?>
+
+
+</body>
+</html>
