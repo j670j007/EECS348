@@ -13,11 +13,13 @@ $num = $_POST["num"];
 
 echo "<table border='1'>\n";
 for ($i = 1; $i <= $num; $i++) {
+	echo "<tr><th>$i</th>";
 	for ($j = 1; $j <= 10; $j++){
-	echo "\t<tr><td>$i * $j</td><td>" .($i * $j). "</td></tr>\n";
+	echo "<td>" . ($i * $j). "</td>";
 	}
-	echo "</table>\n";
+	echo "</tr>";
 }
+echo "</table>";
 	
 ?>
 
